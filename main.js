@@ -10,15 +10,15 @@ function playSound(event) {
     if (event.keyCode == 65) { // "a"
         // Play A-Clap
         audiosound('clap', 'A');
-        
+
     } else if (event.keyCode == 83) { // "s"
         // Play S-hihat
         audiosound('hihat', 'S');
-        
+
     } else if (event.keyCode == 68) { // "d"
         // Play D-kick
         audiosound('kick', 'D');
-       
+
     } else if (event.keyCode == 70) { // "f"
         // Play F-Openhat
         audiosound('openhat', 'F');
@@ -46,7 +46,7 @@ function playSound(event) {
     }
 }
 // Helper Function
-function audiosound(sound, letter ){
+function audiosound(sound, letter) {
     // Playing Audio
     let audio = document.getElementById(sound);
     audio.currentTime = 0;
